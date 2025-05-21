@@ -40,3 +40,46 @@ body{
   pointer-events: none; // Permet les clics à travers le quadrillage
   z-index: 9999; // Au-dessus de tout
 }
+
+.sy-page{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sy-panel{
+    background-color: $bg-panel;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.sy-img{
+    border: 1px solid $fg-main;
+}
+
+.sy-card{
+    background-color: $bg-panel;
+    box-sizing: border-box;
+    color: $fg-main;
+}
+
+.sy-card-title{
+    background-color: $fg-main;
+    color: $fg-menu;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sy-card-content{
+    padding: 10px;
+    box-sizing: border-box;
+}

@@ -1,1 +1,21 @@
-<p>main works!</p>
+<div class="sy-page">
+    <div class="sy-card">
+        <div class="sy-card-title">
+            User
+        </div>
+        <div class="sy-card-content">
+            <table *ngIf="user" class="w100">
+                <tr>
+                    <td style="width: 1px; white-space: nowarp;">
+                        <img [src]="user.avatar" class="sy-img" width="100px" height="100px"/>
+                    </td>
+                    <td style="vertical-align: top;;">
+                        <div style="font-weight: bold;">{{user.name}}</div>
+                    </td>
+                </tr>
+            </table>
+
+            <span *ngIf="!user">No user loaded</span>
+        </div>
+    </div>
+</div>

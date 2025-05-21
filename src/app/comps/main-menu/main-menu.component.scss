@@ -27,4 +27,9 @@
     color: $fg-menu;
     font-size: 1.5rem;
     cursor: pointer;
+
+    &:active{
+        color: $fg-primary;
+        background-color: transparent !important; // Supprime le fond
+    }
 }
