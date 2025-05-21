@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'app/styles/variables' as *;
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body{
+    background-color: $fg-menu;
+    color: $fg-main;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.w100{
+    width: 100%;
+}
+
+// Quadrillage léger
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background:
+    linear-gradient(to right, rgba($fg-main, 0.01) 2px, transparent 1px) 0 0,
+    linear-gradient(to bottom, rgba($fg-main, 0.01) 2px, transparent 1px) 0 0;
+  background-size: 5px 5px; // Taille des carrés
+  pointer-events: none; // Permet les clics à travers le quadrillage
+  z-index: 9999; // Au-dessus de tout
+}

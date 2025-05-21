@@ -1,0 +1,30 @@
+@use '../../styles/variables' as *;
+
+.sy-menu{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $fg-main;
+    z-index: 10;
+}
+
+.sy-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sy-menu-btn{
+    height: 40px;
+    width: 40px;
+    border: 0;
+    flex: 1;
+    background: none;
+    color: $fg-menu;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

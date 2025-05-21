@@ -21,6 +21,13 @@
     "@capacitor/android": "^7.2.0",
     "@capacitor/angular": "^2.0.3",
     "@capacitor/core": "latest",
+    "angular-oauth2-oidc": "^19.0.0",
+    "chart.js": "^4.3.0",
+    "jwt-decode": "^4.0.0",
+    "ng2-charts": "^8.0.0",
+    "ngx-markdown": "^19.1.1",
+    "ngx-toastr": "^19.0.0",
+    "sass": "^1.87.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
