@@ -1,4 +1,4 @@
-<div class="sy-page">
+<div class="sy-page" @fadeIn>
     <div class="sy-card">
         <div class="sy-card-title">
             User
@@ -11,6 +11,15 @@
                     </td>
                     <td style="vertical-align: top;;">
                         <div style="font-weight: bold;">{{user.name}}</div>
+                        <div>{{user.email}}</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <xp-bar [xpPercent]="user.xpPercentFrontEnd" [level]="user.levelFrontEnd" [label]="'FrontEnd'" [icon]="'/images/icon-frontend.svg'"></xp-bar>
+                        <xp-bar [xpPercent]="user.xpPercentBackEnd" [level]="user.levelBackEnd" [label]="'BackEnd'" [icon]="'/images/icon-backend.svg'"></xp-bar>
+                        <xp-bar [xpPercent]="user.xpPercentTests" [level]="user.levelTests" [label]="'Tests'" [icon]="'/images/icon-tests.svg'"></xp-bar>
+                        <xp-bar [xpPercent]="user.xpPercentManagement" [level]="user.levelManagement" [label]="'Management'" [icon]="'/images/icon-management.svg'"></xp-bar>
                     </td>
                 </tr>
             </table>

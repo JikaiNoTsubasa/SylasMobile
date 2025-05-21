@@ -1,1 +1,11 @@
-<p>todo works!</p>
+<div class="sy-page" @fadeIn>
+    <h1>TODO</h1>
+    <div class="sy-panel" *ngIf="todos && todos.length > 0">
+        <div *ngFor="let todo of todos" class="todo">
+            <i class="fa-solid fa-box"></i> {{todo.name}}
+        </div>
+    </div>
+    <div class="sy-panel" *ngIf="!todos || todos.length === 0">
+        No todos
+    </div>
+</div>

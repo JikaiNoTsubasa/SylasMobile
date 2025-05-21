@@ -2,14 +2,17 @@
 
 // $bg-menu: #2D364B; // 4C4940
 $bg-menu: #4C4940; // 4C4940
-$fg-menu: #D0CBAD;
+//$fg-menu: #D0CBAD;
+$fg-menu: #C9C5AC;
 $fg-menu-50: rgba($fg-menu, 0.2);
 
 // $fg-main: #1D201D;
-$fg-main: #4C4940;
+//$fg-main: #4C4940;
+$fg-main: #524741;
 $fg-main-darken: color.scale($fg-main, $lightness: -20%);
 $fg-main-alpha: #1D201D00;
 $fg-main-50: rgba($fg-main, 0.2);
 $fg-primary: #8BFDDF;
-$grid-color: #C9C4A6;
-$bg-panel: #FFFCCF
+// $grid-color: #C9C4A6;
+$grid-color: #B7B29C;
+$bg-panel: #B7B29C
